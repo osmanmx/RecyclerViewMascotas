@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:androidx="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/cvMascota"
+    android:elevation="@dimen/cardview_elevation"
+    app:cardCornerRadius="@dimen/cardview_radius"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageDog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/dog1"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+
+        <ImageView
+            android:id="@+id/iconBone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDog"
+            android:layout_alignStart="@id/imageDog"
+            android:src="@mipmap/bone"
+
+            />
+
+        <TextView
+            android:id="@+id/name_dog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDog"
+            android:text="name"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_text"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <ImageView
+            android:id="@+id/iconBoneColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/imageDog"
+            android:layout_below="@id/imageDog"
+            android:src="@mipmap/bone_color"
+
+            />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDog"
+            android:layout_toStartOf="@id/iconBoneColor"
+            android:text="@string/text_rating"
+            android:textSize="@dimen/dimen_text"
+            android:textColor="@color/colorAccent"
+
+            />
+
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
