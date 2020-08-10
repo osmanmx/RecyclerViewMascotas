@@ -29,7 +29,7 @@ Android-Manifest:
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-## Captura de Pantalla - Formulario Contacto
+## Captura de Pantalla - RecyclerView Mascotas
 
 <div align="center">
     <center>
