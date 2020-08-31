@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.cidie.recyclerviewmascotas">
+    package="org.cidie.mascotas">
 
     <application
         android:allowBackup="true"
@@ -10,22 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".layout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Detalle"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".layout.About"
+            android:parentActivityName=".layout.MainActivity">
+
             <!-- Soporte para versiones 4.0 y anteriores -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity">
-            </meta-data>
+                android:value=".layout.MainActivity" />
         </activity>
+        <activity
+            android:name=".layout.Contacto"
+            android:parentActivityName=".layout.MainActivity" />
+        <activity
+            android:name=".layout.Detalle"
+            android:parentActivityName=".layout.MainActivity" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

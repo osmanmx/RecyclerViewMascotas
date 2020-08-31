@@ -1,5 +1,23 @@
 <resources>
-    <string name="app_name">RecyclerViewMascotas</string>
+    <string name="app_name"></string>
+    <string name="cvtextname">Name</string>
     <string name="text_rating">5  </string>
     <string name="Toolbar_name">Mascotas - CIDIE</string>
+    <string name="Detalle_name">Favoritas por ustedes...</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_about">About</string>
+    <string name="menu_fav">Favoritos</string>
+    <string name="text_input_name">Nombre:</string>
+    <string name="text_input_email">Correo:</string>
+    <string name="text_input_message">Mensaje:</string>
+    <string name="text_view_contactTitle">Tu opinión es importante</string>
+    <string name="text_view_contactMessage">Envianos un correo y obtén 15% descuento</string>
+    <string name="button_send_comment">Enviar Comentario</string>
+    <string name="text_view_aboutTitle">Acerca de...</string>
+    <string name="text_view_aboutInfo">Información App</string>
+    <string name="text_view_aboutVersion">Versión: 1.0</string>
+    <string name="text_view_aboutAppDesign">Diseño - App: Osman Villanueva</string>
+    <string name="text_view_aboutEmail">osman@cidie.org</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_cvMiMascota">Sr Rudo</string>
 </resources>

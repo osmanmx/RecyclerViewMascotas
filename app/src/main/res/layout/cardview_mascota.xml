@@ -5,11 +5,9 @@
     xmlns:androidx="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:id="@+id/cvMascota"
     android:elevation="@dimen/cardview_elevation"
     app:cardCornerRadius="@dimen/cardview_radius"
-
     >
 
     <RelativeLayout
@@ -27,27 +25,25 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/iconBone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageDog"
             android:layout_alignStart="@id/imageDog"
-            android:src="@mipmap/bone"
-
-            />
+            android:background="@color/textColor"
+            android:src="@mipmap/bone" />
 
         <TextView
             android:id="@+id/name_dog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageDog"
-            android:text="name"
+            android:text="@string/cvtextname"
             android:gravity="center"
             android:textSize="@dimen/dimen_text"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
-
             />
 
         <ImageView

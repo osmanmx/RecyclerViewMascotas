@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="org.cidie.mascotas.fragment.PerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMiMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imgCircular"
+                    android:layout_width="@dimen/circular_photo"
+                    android:layout_height="@dimen/circular_photo"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/cardview_elevation"
+                    android:src="@drawable/dog2"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/textColor"
+                    app:civ_border_width="@dimen/circular_border"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorAccent"
+                    app:civ_shadow_radius="@dimen/circular_radio" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgCircular"
+                    android:layout_gravity="center"
+                    android:text="@string/text_cvMiMascota"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimen_text" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMiMascota"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
