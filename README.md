@@ -19,8 +19,8 @@ Se agregó Botón de Regresar (Back) - en cada Actividad adicional (Contacto, Ab
 Se anexan imágenes (RecyclerViewMascotas) de actualización de App (Mascotas) y ejemplos al ejecutar aplicación en Android Studio 4.0.1.
 
 Android- Build Gadle:
-
-android {
+    
+    android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     
@@ -33,6 +33,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     }
+
 
 ## Captura de Pantalla - RecyclerView Mascotas - Menús y Fragments
 
