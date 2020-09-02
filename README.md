@@ -19,13 +19,9 @@ Se crea un modelo de base de datos que contenga una tabla llamada mascota idént
 <br>
 
 
-### Video de funcionalidad App - RecyclerView Mascotas - BDatos - Modelo Vista Presentador (MVP) con Menús y Fragments.
+### Clic para ver el Video de funcionalidad App - 
 
-<div align="center">
-    <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dUG9W3V0s04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </center>
-</div>
+[![App en Android studio](https://github.com/osmanmx/RecyclerViewMascotas/blob/master/app/video-app.png)](https://www.youtube.com/embed/dUG9W3V0s04 "RecyclerView Mascotas - BDatos - Modelo Vista Presentador (MVP) con Menús y Fragments - Click to Watch!")
 
 <br>
 
