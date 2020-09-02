@@ -6,12 +6,8 @@ package org.cidie.mascotas.layout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
-
-import androidx.recyclerview.widget.DefaultItemAnimator;
-
-import android.view.Window;
-import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,28 +16,35 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import org.cidie.mascotas.pojo.Mascota;
 import org.cidie.mascotas.R;
 import org.cidie.mascotas.adapter.RVAdapter;
+import org.cidie.mascotas.presentador.DetallePresenter;
+import org.cidie.mascotas.presentador.IDetallePresenter;
 
 import java.util.ArrayList;
 
-public class Detalle extends AppCompatActivity {
+public class Detalle extends AppCompatActivity implements iDetalle {
 
-    ArrayList<Mascota> mascotasD;
-    private Toolbar toolbar;
+    //    Toolbar toolbar;
+    ArrayList<Mascota> mascotas;
+    private RecyclerView listaMascotas;
+    private IDetallePresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_detalle);
 
-        toolbar = (Toolbar) findViewById(R.id.miActionBar);
+        listaMascotas = (RecyclerView) findViewById(R.id.rv_detalle);
 
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
+        presenter = new DetallePresenter(this, this);
+
+//        toolbar = (Toolbar) findViewById(R.id.miActionBar);
+//        if (toolbar != null) {
+//            setSupportActionBar(toolbar);
+//        }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+    }
+        /*
         mascotasD = new ArrayList<Mascota>();
         mascotasD.add(new Mascota("Sr Rudo", 12, R.drawable.dog2));
         mascotasD.add(new Mascota("Negro", 10, R.drawable.dog3));
@@ -52,19 +55,25 @@ public class Detalle extends AppCompatActivity {
         mascotasD.add(new Mascota("Mr Sancho", 4, R.drawable.dog9));
         mascotasD.add(new Mascota("Bobby", 4, R.drawable.dog4));
 
+        */
 
-        RecyclerView rv = (RecyclerView) findViewById(R.id.rv_detalle);
-        rv.setHasFixedSize(true);
+
+    @Override
+    public void GenerarLLM() {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
-        rv.setLayoutManager(llm);
-        rv.setClickable(false);
-        rv.setEnabled(false);
-        //rv.setLayoutFrozen(true);
-        rv.setItemAnimator(new DefaultItemAnimator());
-        RVAdapter adapter = new RVAdapter(mascotasD, this);//se transfiere listado al adaptador
-        rv.setAdapter(adapter);
 
+        listaMascotas.setLayoutManager(llm);
     }
 
+    @Override
+    public RVAdapter crearAdaptador(ArrayList<Mascota> mascotas) {
+        RVAdapter adapter = new RVAdapter(mascotas, Detalle.this);
+        return adapter;
+    }
+
+    @Override
+    public void InicializarAdaptadorLikes(RVAdapter adapter) {
+        listaMascotas.setAdapter(adapter);
+    }
 }

@@ -1,14 +1,20 @@
 package org.cidie.mascotas.pojo;
 
 public class Mascota {
+    int id;
     String name;
     int rating;
     int image;
 
-    public Mascota(String name, int rating, int image) {
+    public Mascota(int id, String name, int rating, int image) {
+        this.id = id;
         this.name = name;
         this.rating = rating;
         this.image = image;
+    }
+
+    public Mascota() {
+
     }
 
     public String getName() {
@@ -35,5 +41,12 @@ public class Mascota {
         this.image = image;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 }

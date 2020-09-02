@@ -13,18 +13,18 @@ import org.cidie.mascotas.R;
 
 public class About extends AppCompatActivity {
 
-    private Toolbar toolbar;
+//    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        toolbar = (Toolbar) findViewById(R.id.miActionBar);
+//        toolbar = (Toolbar) findViewById(R.id.miActionBar);
 
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
+//        if (toolbar != null) {
+//            setSupportActionBar(toolbar);
+//        }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

@@ -6,8 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.google.android.material.textfield.TextInputEditText;
+import android.widget.EditText;
 
 import org.cidie.mascotas.R;
 import org.cidie.mascotas.pojo.SendMail;
@@ -17,10 +16,10 @@ import org.cidie.mascotas.pojo.SendMail;
  */
 
 public class Contacto extends AppCompatActivity implements View.OnClickListener {
-    private Toolbar toolbar;
-    private TextInputEditText inputName;
-    private TextInputEditText inputEmail;
-    private TextInputEditText inputMessage;
+    //    private Toolbar toolbar;
+    private EditText inputName;
+    private EditText inputEmail;
+    private EditText inputMessage;
 
     private Button botonEnviar;
 
@@ -29,17 +28,17 @@ public class Contacto extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacto);
 
-        toolbar = (Toolbar) findViewById(R.id.miActionBar);
+//        toolbar = (Toolbar) findViewById(R.id.miActionBar);
 
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
+//        if (toolbar != null) {
+//            setSupportActionBar(toolbar);
+//        }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        inputName = (TextInputEditText) findViewById(R.id.textInputName);
-        inputEmail = (TextInputEditText) findViewById(R.id.textInputEmail);
-        inputMessage = (TextInputEditText) findViewById(R.id.textInputMessage);
+        inputName = (EditText) findViewById(R.id.textInputName);
+        inputEmail = (EditText) findViewById(R.id.textInputEmail);
+        inputMessage = (EditText) findViewById(R.id.textInputMessage);
 
         botonEnviar = (Button) findViewById(R.id.buttonSend);
 

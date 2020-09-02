@@ -1,4 +1,38 @@
-# Mascotas CIDIE
+# Mascotas CIDIE (Versión 1.1)
+
+AGREGANDO Base de Datos y MVP ( Modelo Vista Presentador) al proyecto anterior:
+
+Son 10 mascotas que cambian conforme el usuario da rating a una o varias, mascotas. Contiene actividad de "Contacto" y "About" con librerías javaMailpara enviar mensajes en el diseño de la App. 
+
+En el POJO que estas manejando para la entidad mascota se genera un dentificador único que permite diferenciar una mascota de otra.
+
+Se crea un modelo de base de datos que contenga una tabla llamada mascota idéntica al POJO de mascota, de tal forma que cuando una persona de rating a una foto se guardan los datos completos de la entidad en la base de datos (sqlite3). 
+
+
+## Captura de Pantalla - RecyclerView Mascotas - BDatos - Modelo Vista Presentador (MVP) con Menús y Fragments.
+
+<div align="center">
+    <center>
+        <img src="app/mascotas-semana5.gif" width="700">
+    </center>
+</div>
+<br>
+
+
+### Video de funcionalidad App - RecyclerView Mascotas - BDatos - Modelo Vista Presentador (MVP) con Menús y Fragments.
+
+<div align="center">
+    <center>
+        <a href="https://youtu.be/dUG9W3V0s04>Visit Video App</a>
+    </center>
+</div>
+<br>
+
+________________________________________________________________
+
+
+# Mascotas CIDIE (versión 1.1)
+
 Partiendo del proyecto anterior se agregaron Menús y Fragments.
 
 AGREGANDO MENÚS:
@@ -47,7 +81,8 @@ Android- Build Gadle:
 _________________________________________________________________________________________
 
 
-# RecyclerViewMascotas
+# RecyclerViewMascotas (versión 1.0)
+
 Genera un RecyclerView que muestre una lista de mascotas 
 
 Actividad 1 - MainActivity

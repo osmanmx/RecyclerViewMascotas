@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="org.cidie.mascotas.layout.About">
-
+<!--
     <include
         android:id="@+id/miActionBar"
         layout="@layout/action_bar" />
-
+-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:orientation="horizontal">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -65,7 +65,7 @@
         android:textSize="@dimen/text_about"
         android:textStyle="bold" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"

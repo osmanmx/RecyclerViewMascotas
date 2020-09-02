@@ -31,7 +31,7 @@ import org.cidie.mascotas.pojo.Mascota;
 public class MainActivity extends AppCompatActivity {
     ArrayList<Mascota> mascotas;
 
-    private Toolbar toolbar;
+//    private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -42,15 +42,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = (Toolbar) findViewById(R.id.miActionBar);
+//        toolbar = (Toolbar) findViewById(R.id.miActionBar);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
         setUpViewPager();
 
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
+//        if (toolbar != null) {
+//            setSupportActionBar(toolbar);
+//        }
+
     }
 
     @Override

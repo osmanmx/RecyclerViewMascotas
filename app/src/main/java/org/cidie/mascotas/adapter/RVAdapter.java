@@ -14,8 +14,10 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
+import org.cidie.mascotas.db.ConstructorMascotas;
 import org.cidie.mascotas.pojo.Mascota;
 import org.cidie.mascotas.R;
 import org.jetbrains.annotations.NotNull;
@@ -43,13 +45,22 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.MascotaViewHolder>
 
     //Asocia cada elemento de la lista con su respectiva view
     @Override
-    public void onBindViewHolder(MascotaViewHolder mascotaViewHolder, int position) {
+    public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota = mascotas.get(position);
         mascotaViewHolder.mascotaPhoto.setImageResource(mascota.getImage());
         mascotaViewHolder.mascotaName.setText(mascota.getName());
         mascotaViewHolder.mascotaRating.setText(String.valueOf(mascota.getRating()));
         mascotaViewHolder.mascotaBone.setTag(mascotaViewHolder);
 
+        mascotaViewHolder.mascotaBone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(activity, "Diste like a " + mascota.getName(), Toast.LENGTH_SHORT).show();
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
+                constructorMascotas.DarLike(mascota);
+                mascotaViewHolder.mascotaRating.setText(String.valueOf(constructorMascotas.ObtenerLikes(mascota)));
+/*
         if (mascota.getRating() == 0)
             mascotaViewHolder.mascotaBone.setOnClickListener(new View.OnClickListener() {
 
@@ -58,8 +69,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.MascotaViewHolder>
                     MascotaViewHolder mH = (MascotaViewHolder) v.getTag();
                     mH.mascotaRating.setText(String.valueOf(1 + Integer.parseInt(mH.mascotaRating.getText().toString())));
 
-                }
-            });
+*/
+            }
+        });
 
     }
 

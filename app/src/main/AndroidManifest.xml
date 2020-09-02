@@ -21,10 +21,11 @@
             android:name=".layout.About"
             android:parentActivityName=".layout.MainActivity">
 
-            <!-- Soporte para versiones 4.0 y anteriores -->
+            <!-- Soporte para versiones 4.0 y anteriores
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".layout.MainActivity" />
+                -->
         </activity>
         <activity
             android:name=".layout.Contacto"

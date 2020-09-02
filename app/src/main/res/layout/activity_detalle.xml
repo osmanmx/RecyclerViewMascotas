@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".layout.Detalle">
-
+<!--
     <include
         android:id="@+id/miActionBar"
-        layout="@layout/action_bar" />
+        layout="@layout/action_bar"
+        />
 
+        Agregar al siguiente "TextView":
+        android:layout_below="@+id/miActionBar"
+-->
     <TextView
         android:id="@+id/detalle_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/miActionBar"
         android:gravity="center_horizontal"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/dimen_barMarginL"
