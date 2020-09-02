@@ -1,4 +1,4 @@
-# Mascotas CIDIE (Versión 1.1)
+# Mascotas CIDIE (Versión 1.2)
 
 AGREGANDO Base de Datos y MVP ( Modelo Vista Presentador) al proyecto anterior:
 
