@@ -4,9 +4,9 @@ AGREGANDO Base de Datos y MVP ( Modelo Vista Presentador) al proyecto anterior:
 
 Son 10 mascotas que cambian conforme el usuario da rating a una o varias, mascotas. Contiene actividad de "Contacto" y "About" con librerías javaMailpara enviar mensajes en el diseño de la App. 
 
-En el POJO que estas manejando para la entidad mascota se genera un dentificador único que permite diferenciar una mascota de otra.
+En el POJO de la entidad "mascota" se genera un dentificador único que permite diferenciar una mascota de otra.
 
-Se crea un modelo de base de datos que contenga una tabla llamada mascota idéntica al POJO de mascota, de tal forma que cuando una persona de rating a una foto se guardan los datos completos de la entidad en la base de datos (sqlite3). 
+La App crea y consulta Base de Datos a partir de una tabla llamada "MASCOTA" idéntica al POJO de "mascota", de tal forma que cuando una persona de "rating" a una imagen se guardan los datos completos de la entidad en la base de datos (sqlite3). 
 
 
 ## Captura de Pantalla - RecyclerView Mascotas - BDatos - Modelo Vista Presentador (MVP) con Menús y Fragments.
